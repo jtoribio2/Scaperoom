@@ -1,0 +1,590 @@
+
+<!doctype html>
+<html lang="ca">
+  <head>
+    <!-- CONFIGURACIÓ BÀSICA -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO PRINCIPAL -->
+    <title>Escape Room a Blanes | Escape Zone</title>
+    <meta
+      name="description"
+      content="Descobreix Escape Zone, la teva experiència d'escape room a Blanes. Resol enigmes, supera reptes i viu una aventura única amb amics o família."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ca_ES" />
+    <meta property="og:site_name" content="Escape Zone" />
+    <meta property="og:title" content="Escape Room a Blanes | Escape Zone" />
+    <meta
+      property="og:description"
+      content="Seràs capaç de resoldre tots els enigmes? Descobreix les nostres experiències d'escape room."
+    />
+
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Escape Room a Blanes | Escape Zone" />
+    <meta
+      name="twitter:description"
+      content="Viu una aventura inoblidable a Escape Zone."
+    />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/favicon/favicon.ico" />
+
+    <!-- CSS COMPILAT DE TAILWIND -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body class="bg-[#101010] text-white">
+    <!-- CAPÇALERA -->
+    <header
+      class="absolute top-0 left-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-md"
+    >
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5"
+        aria-label="Navegació principal"
+      >
+        <!-- LOGOTIP -->
+        <a
+          href="./index.html"
+          class="text-2xl font-black tracking-wider text-white"
+          aria-label="Escape Zone - Inici"
+        >
+          ESCAPE<span class="text-orange-500">ZONE</span>
+        </a>
+
+        <!-- MENÚ DE NAVEGACIÓ -->
+        <ul
+          class="hidden items-center gap-10 text-sm font-medium text-gray-300 md:flex"
+        >
+          <li>
+            <a
+              href="./index.html"
+              aria-current="page"
+              class="text-orange-500 transition-colors hover:text-orange-400"
+            >
+              Inici
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./salas.html"
+              class="transition-colors hover:text-orange-500"
+            >
+              Les nostres sales
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./experiencias.html"
+              class="transition-colors hover:text-orange-500"
+            >
+              Experiències
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./contacto.html"
+              class="transition-colors hover:text-orange-500"
+            >
+              Contacte
+            </a>
+          </li>
+        </ul>
+
+        <!-- BOTÓ DE RESERVES -->
+        <a
+          href="./contacto.html"
+          class="rounded-md bg-orange-600 px-5 py-3 text-sm font-bold text-white transition-all hover:bg-orange-500"
+        >
+          Reserva la teva experiència
+        </a>
+      </nav>
+    </header>
+
+    <!-- CONTINGUT PRINCIPAL -->
+    <main>
+      <!-- HERO -->
+      <section
+        aria-labelledby="hero-title"
+        class="relative flex min-h-screen items-center overflow-hidden bg-[#101010] px-6 pt-28"
+      >
+        <!-- IMATGE DE FONS -->
+        <div class="absolute inset-0">
+          <img
+            src="./assets/img/escape-room-portada.webp"
+            alt=""
+            fetchpriority="high"
+            class="h-full w-full object-cover opacity-40"
+          />
+
+          <!-- CAPES D'OMBRA -->
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/20"
+          ></div>
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-[#101010] via-transparent to-black/30"
+          ></div>
+        </div>
+
+        <!-- CONTINGUT DEL HERO -->
+        <div class="relative z-10 mx-auto w-full max-w-7xl">
+          <div class="max-w-3xl">
+            <p
+              class="mb-6 flex items-center gap-3 text-sm font-bold uppercase tracking-[0.3em] text-orange-500"
+            >
+              <span class="h-[2px] w-10 bg-orange-500"></span>
+              El joc comença aquí
+            </p>
+
+            <h1
+              id="hero-title"
+              class="text-5xl font-black leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl"
+            >
+              Escape Room a Blanes:
+              <span class="text-orange-500">
+                seràs capaç d'escapar?
+              </span>
+            </h1>
+
+            <p class="mt-8 max-w-2xl text-lg leading-relaxed text-gray-300">
+              Endinsa't en una aventura plena d'enigmes, misteris i reptes.
+              Treballa en equip, descobreix les pistes i aconsegueix escapar
+              abans que s'acabi el temps.
+            </p>
+
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a
+                href="./salas.html"
+                class="rounded-md bg-orange-600 px-8 py-4 font-bold text-white transition-all hover:-translate-y-1 hover:bg-orange-500"
+              >
+                Descobreix les nostres sales
+              </a>
+
+              <a
+                href="#com-funciona"
+                class="rounded-md border border-white/30 px-8 py-4 font-bold text-white transition-all hover:border-orange-500 hover:text-orange-500"
+              >
+                Com funciona?
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRESENTACIÓ DE ESCAPE ZONE -->
+      <section
+        aria-labelledby="about-title"
+        class="bg-[#101010] px-6 py-24"
+      >
+        <div class="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-2">
+          <!-- CONTINGUT TEXTUAL -->
+          <div>
+            <p
+              class="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-orange-500"
+            >
+              Descobreix Escape Zone
+            </p>
+
+            <h2
+              id="about-title"
+              class="text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl"
+            >
+              Molt més que un joc,
+              <span class="text-orange-500">
+                una aventura per recordar.
+              </span>
+            </h2>
+
+            <p class="mt-6 leading-relaxed text-gray-400">
+              A Escape Zone t'espera una experiència d'escape room a Blanes on
+              la lògica, l'observació i el treball en equip seran
+              imprescindibles per superar cada repte.
+            </p>
+
+            <p class="mt-4 leading-relaxed text-gray-400">
+              Endinsa't en escenaris immersius, resol enigmes, troba pistes
+              amagades i descobreix els secrets de cada sala. Tens un temps
+              limitat per aconseguir el teu objectiu. Acceptes el repte?
+            </p>
+
+            <a
+              href="./salas.html"
+              class="mt-8 inline-flex rounded-md bg-orange-600 px-7 py-4 font-bold text-white transition-all hover:-translate-y-1 hover:bg-orange-500"
+            >
+              Explora les nostres sales
+            </a>
+          </div>
+
+          <!-- IMATGE DE PRESENTACIÓ -->
+          <div class="relative">
+            <div
+              class="absolute -inset-4 rounded-xl border border-orange-500/20"
+            ></div>
+
+            <img
+              src="./assets/img/escape-room-about.webp"
+              alt="Interior d'una sala d'escape room amb enigmes i elements misteriosos"
+              loading="lazy"
+              class="relative h-[350px] w-full rounded-xl object-cover sm:h-[450px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- LES NOSTRES SALES -->
+      <section
+        aria-labelledby="rooms-title"
+        class="bg-[#151515] px-6 py-24"
+      >
+        <div class="mx-auto max-w-7xl">
+          <!-- CAPÇALERA DE LA SECCIÓ -->
+          <div class="mx-auto mb-16 max-w-2xl text-center">
+            <p
+              class="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-orange-500"
+            >
+              Troba la teva aventura
+            </p>
+
+            <h2
+              id="rooms-title"
+              class="text-3xl font-black text-white sm:text-4xl lg:text-5xl"
+            >
+              Les nostres
+              <span class="text-orange-500">
+                sales d'escape room
+              </span>
+            </h2>
+
+            <p class="mt-6 leading-relaxed text-gray-400">
+              Tres aventures diferents, tres reptes per superar. Tria la sala
+              que més t'agradi i posa a prova les teves habilitats amb el teu
+              equip.
+            </p>
+          </div>
+
+          <!-- TARGETES DE LES SALES -->
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- SALA 1 -->
+            <article
+              class="group overflow-hidden rounded-xl border border-white/10 bg-[#1c1c1c] transition-all duration-300 hover:-translate-y-2 hover:border-orange-500/50"
+            >
+              <!-- IMATGE -->
+              <div class="relative h-60 overflow-hidden">
+                <img
+                  src="./assets/img/sala-detectiu.webp"
+                  alt="Sala de misteri ambientada en un despatx de detectius"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+
+                <span
+                  class="absolute left-4 top-4 rounded-md bg-orange-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white"
+                >
+                  Misteri
+                </span>
+              </div>
+
+              <!-- CONTINGUT -->
+              <div class="p-7">
+                <h3 class="text-2xl font-bold text-white">
+                  El misteri del detectiu
+                </h3>
+
+                <p class="mt-4 leading-relaxed text-gray-400">
+                  Un detectiu ha desaparegut sense deixar rastre. Investiga el
+                  seu despatx, troba les pistes ocultes i descobreix què ha
+                  passat abans que sigui massa tard.
+                </p>
+
+                <!-- INFORMACIÓ -->
+                <div
+                  class="mt-6 flex flex-wrap gap-4 border-t border-white/10 pt-5 text-sm text-gray-400"
+                >
+                  <span>
+                    <span class="text-orange-500">●</span>
+                    2-6 jugadors
+                  </span>
+
+                  <span>
+                    <span class="text-orange-500">●</span>
+                    60 minuts
+                  </span>
+                </div>
+
+                <p class="mt-4 text-sm font-semibold text-orange-500">
+                  Dificultat: Mitjana
+                </p>
+
+                <!-- ENLLAÇ -->
+                <a
+                  href="./salas.html"
+                  class="mt-7 inline-flex items-center gap-2 font-bold text-white transition-colors hover:text-orange-500"
+                >
+                  Descobreix la sala
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- SALA 2 -->
+            <article
+              class="group overflow-hidden rounded-xl border border-white/10 bg-[#1c1c1c] transition-all duration-300 hover:-translate-y-2 hover:border-orange-500/50"
+            >
+              <!-- IMATGE -->
+              <div class="relative h-60 overflow-hidden">
+                <img
+                  src="./assets/img/sala-piramide.webp"
+                  alt="Sala d'aventura ambientada en una antiga piràmide egípcia"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+
+                <span
+                  class="absolute left-4 top-4 rounded-md bg-orange-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white"
+                >
+                  Aventura
+                </span>
+              </div>
+
+              <!-- CONTINGUT -->
+              <div class="p-7">
+                <h3 class="text-2xl font-bold text-white">
+                  El secret de la piràmide
+                </h3>
+
+                <p class="mt-4 leading-relaxed text-gray-400">
+                  Una antiga piràmide amaga un tresor llegendari. Explora les
+                  seves cambres, interpreta els símbols ancestrals i resol els
+                  enigmes per trobar el secret que s'hi amaga.
+                </p>
+
+                <!-- INFORMACIÓ -->
+                <div
+                  class="mt-6 flex flex-wrap gap-4 border-t border-white/10 pt-5 text-sm text-gray-400"
+                >
+                  <span>
+                    <span class="text-orange-500">●</span>
+                    2-6 jugadors
+                  </span>
+
+                  <span>
+                    <span class="text-orange-500">●</span>
+                    60 minuts
+                  </span>
+                </div>
+
+                <p class="mt-4 text-sm font-semibold text-orange-500">
+                  Dificultat: Mitjana-alta
+                </p>
+
+                <!-- ENLLAÇ -->
+                <a
+                  href="./salas.html"
+                  class="mt-7 inline-flex items-center gap-2 font-bold text-white transition-colors hover:text-orange-500"
+                >
+                  Descobreix la sala
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- SALA 3 -->
+            <article
+              class="group overflow-hidden rounded-xl border border-white/10 bg-[#1c1c1c] transition-all duration-300 hover:-translate-y-2 hover:border-orange-500/50"
+            >
+              <!-- IMATGE -->
+              <div class="relative h-60 overflow-hidden">
+                <img
+                  src="./assets/img/sala-laboratori.webp"
+                  alt="Laboratori secret amb equipament científic i il·luminació misteriosa"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+
+                <span
+                  class="absolute left-4 top-4 rounded-md bg-orange-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white"
+                >
+                  Suspens
+                </span>
+              </div>
+
+              <!-- CONTINGUT -->
+              <div class="p-7">
+                <h3 class="text-2xl font-bold text-white">
+                  El laboratori prohibit
+                </h3>
+
+                <p class="mt-4 leading-relaxed text-gray-400">
+                  Un experiment secret ha sortit malament. Entra al laboratori,
+                  descobreix què ha passat i troba la manera de solucionar-ho
+                  abans que s'esgoti el temps.
+                </p>
+
+                <!-- INFORMACIÓ -->
+                <div
+                  class="mt-6 flex flex-wrap gap-4 border-t border-white/10 pt-5 text-sm text-gray-400"
+                >
+                  <span>
+                    <span class="text-orange-500">●</span>
+                    2-6 jugadors
+                  </span>
+
+                  <span>
+                    <span class="text-orange-500">●</span>
+                    60 minuts
+                  </span>
+                </div>
+
+                <p class="mt-4 text-sm font-semibold text-orange-500">
+                  Dificultat: Alta
+                </p>
+
+                <!-- ENLLAÇ -->
+                <a
+                  href="./salas.html"
+                  class="mt-7 inline-flex items-center gap-2 font-bold text-white transition-colors hover:text-orange-500"
+                >
+                  Descobreix la sala
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- BOTÓ PER VEURE TOTES LES SALES -->
+          <div class="mt-14 text-center">
+            <a
+              href="./salas.html"
+              class="inline-flex rounded-md border border-orange-500 px-8 py-4 font-bold text-orange-500 transition-all hover:bg-orange-600 hover:text-white"
+            >
+              Veure totes les sales
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- COM FUNCIONA -->
+      <section
+        id="com-funciona"
+        aria-labelledby="how-it-works-title"
+        class="bg-[#111111] px-6 py-24"
+      >
+        <div class="mx-auto max-w-7xl">
+          <!-- TÍTOL DE LA SECCIÓ -->
+          <div class="mx-auto mb-16 max-w-2xl text-center">
+            <span
+              class="text-sm font-semibold uppercase tracking-[0.3em] text-orange-500"
+            >
+              La teva aventura comença aquí
+            </span>
+
+            <h2
+              id="how-it-works-title"
+              class="mt-4 mb-6 text-3xl font-bold text-white md:text-5xl"
+            >
+              Com funciona un
+              <span class="text-orange-500">Escape Room?</span>
+            </h2>
+
+            <p class="text-lg leading-relaxed text-gray-400">
+              Tres passos, un equip i una missió. Posa a prova el teu enginy,
+              treballa en equip i aconsegueix escapar abans que s'acabi el
+              temps.
+            </p>
+          </div>
+
+          <!-- PASSOS -->
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <!-- PAS 1 -->
+            <article
+              class="relative rounded-2xl border border-white/10 bg-[#1b1b1b] p-8 text-center transition duration-300 hover:border-orange-500/50"
+            >
+              <div
+                class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-orange-500/30 bg-orange-500/10"
+              >
+                <span class="text-2xl font-bold text-orange-500">01</span>
+              </div>
+
+              <h3 class="mb-4 text-xl font-bold text-white">
+                Tria la teva aventura
+              </h3>
+
+              <p class="leading-relaxed text-gray-400">
+                Descobreix les nostres sales i escull la missió que més
+                t'agradi. Cada aventura és diferent i plena de sorpreses.
+              </p>
+            </article>
+
+            <!-- PAS 2 -->
+            <article
+              class="relative rounded-2xl border border-white/10 bg-[#1b1b1b] p-8 text-center transition duration-300 hover:border-orange-500/50"
+            >
+              <div
+                class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-orange-500/30 bg-orange-500/10"
+              >
+                <span class="text-2xl font-bold text-orange-500">02</span>
+              </div>
+
+              <h3 class="mb-4 text-xl font-bold text-white">
+                Forma el teu equip
+              </h3>
+
+              <p class="leading-relaxed text-gray-400">
+                Reuneix els teus amics, familiars o companys. La comunicació i
+                el treball en equip seran essencials per superar el repte.
+              </p>
+            </article>
+
+            <!-- PAS 3 -->
+            <article
+              class="relative rounded-2xl border border-white/10 bg-[#1b1b1b] p-8 text-center transition duration-300 hover:border-orange-500/50"
+            >
+              <div
+                class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-orange-500/30 bg-orange-500/10"
+              >
+                <span class="text-2xl font-bold text-orange-500">03</span>
+              </div>
+
+              <h3 class="mb-4 text-xl font-bold text-white">
+                Resol els enigmes
+              </h3>
+
+              <p class="leading-relaxed text-gray-400">
+                Busca pistes, resol els enigmes i supera tots els obstacles
+                abans que el compte enrere arribi a zero.
+              </p>
+            </article>
+          </div>
+
+          <!-- CRIDA A L'ACCIÓ -->
+          <div class="mt-14 text-center">
+            <a
+              href="./salas.html"
+              class="inline-block rounded-lg bg-orange-500 px-8 py-4 font-bold text-white transition duration-300 hover:bg-orange-600"
+            >
+              Descobreix les nostres sales
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PEU DE PÀGINA -->
+    <footer class="border-t border-white/10 bg-black px-6 py-8">
+      <div class="mx-auto max-w-7xl text-center">
+        <p class="text-sm text-gray-400">
+          &copy; 2026 Escape Zone. Tots els drets reservats.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
