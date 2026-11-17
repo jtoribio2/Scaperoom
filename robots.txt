@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://escape-zone-blanes.vercel.app/sitemap.xml
+Sitemap: https://scaperoom-zone-blanes.vercel.app/sitemap.xml
