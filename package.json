@@ -1,12 +1,13 @@
+
 {
   "name": "scaperoom",
   "version": "1.0.0",
-  "description": "\"# Scaperoom\"",
+  "description": "Scaperoom",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/styles.css --watch",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/styles.css --minify"
+    "build": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ./assets/css/styles.css --minify"
   },
   "repository": {
     "type": "git",
